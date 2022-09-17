@@ -1,0 +1,469 @@
+{
+	"info": {
+		"_postman_id": "e01039d1-2495-4e0e-9f77-95f18da39d19",
+		"name": "ClearSolutions",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23351517"
+	},
+	"item": [
+		{
+			"name": "SaveFirstUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"andrii@gmail.com\",\r\n    \"firstName\":\"Andrii\",\r\n    \"lastName\":\"Andrii\",\r\n    \"birthDate\":\"1999-12-12\",\r\n    \"address\":\"Some address\",\r\n    \"phoneNumber\":\"Haven't phone\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/users/save",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SaveSecondUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"bob@gmail.com\",\r\n    \"firstName\":\"Bob\",\r\n    \"lastName\":\"Bob\",\r\n    \"birthDate\":\"2000-12-12\",\r\n    \"address\":\"Some address\",\r\n    \"phoneNumber\":\"Haven't phone\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/users/save",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SaveThirdUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"liza@gmail.com\",\r\n    \"firstName\":\"Liza\",\r\n    \"lastName\":\"Liza\",\r\n    \"birthDate\":\"2001-12-12\",\r\n    \"address\":\"Some address\",\r\n    \"phoneNumber\":\"Haven't phone\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/users/save",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BadCreateUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/users/save",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BadUserEmail",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"liza.com\",\r\n    \"firstName\":\"Liza\",\r\n    \"lastName\":\"Liza\",\r\n    \"birthDate\":\"2002-12-12\",\r\n    \"address\":\"Some address\",\r\n    \"phoneNumber\":\"Haven't phone\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/users/save",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BadAgeUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"liza@gmail.com\",\r\n    \"firstName\":\"Liza\",\r\n    \"lastName\":\"Liza\",\r\n    \"birthDate\":\"2020-12-12\",\r\n    \"address\":\"Some address\",\r\n    \"phoneNumber\":\"Haven't phone\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/users/save",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"liza@gmail.com\",\r\n    \"firstName\":\"Liza\",\r\n    \"lastName\":\"Liza\",\r\n    \"birthDate\":\"2001-12-12\",\r\n    \"address\":\"Some address\",\r\n    \"phoneNumber\":\"Haven't phone\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/users/update/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"update",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BadUpdateUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"liza@gmail.com\",\r\n    \"firstName\":\"Liza\",\r\n    \"lastName\":\"Liza\",\r\n    \"birthDate\":\"2001-12-12\",\r\n    \"address\":\"Some address\",\r\n    \"phoneNumber\":\"Haven't phone\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/users/update/100",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"update",
+						"100"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/users/delete/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"delete",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BadDeleteUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"liza@gmail.com\",\r\n    \"firstName\":\"Liza\",\r\n    \"lastName\":\"Liza\",\r\n    \"birthDate\":\"2001-12-12\",\r\n    \"address\":\"Some address\",\r\n    \"phoneNumber\":\"Haven't phone\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/users/delete/100",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"delete",
+						"100"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AllUsers",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/users/getAll",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"getAll"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UserById",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"andrii@gmail.com\",\r\n    \"firstName\":\"Andrii\",\r\n    \"lastName\":\"Andrii\",\r\n    \"birthDate\":\"1999-12-12\",\r\n    \"address\":\"Some address\",\r\n    \"phoneNumber\":\"Haven't phone\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/users/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BadUserById",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"andrii@gmail.com\",\r\n    \"firstName\":\"Andrii\",\r\n    \"lastName\":\"Andrii\",\r\n    \"birthDate\":\"1999-12-12\",\r\n    \"address\":\"Some address\",\r\n    \"phoneNumber\":\"Haven't phone\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/users/100",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"100"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetUsersBetweenDate",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"andrii@gmail.com\",\r\n    \"firstName\":\"Andrii\",\r\n    \"lastName\":\"Andrii\",\r\n    \"birthDate\":\"1999-12-12\",\r\n    \"address\":\"Some address\",\r\n    \"phoneNumber\":\"Haven't phone\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/users/getBetween/2000-12-12/2001-12-12",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"getBetween",
+						"2000-12-12",
+						"2001-12-12"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BadUsersBetweenDate",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"andrii@gmail.com\",\r\n    \"firstName\":\"Andrii\",\r\n    \"lastName\":\"Andrii\",\r\n    \"birthDate\":\"1999-12-12\",\r\n    \"address\":\"Some address\",\r\n    \"phoneNumber\":\"Haven't phone\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/users/getBetween/2001-12-12/2000-12-12/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"getBetween",
+						"2001-12-12",
+						"2000-12-12",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
